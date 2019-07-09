@@ -1,0 +1,205 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+------------------------------------------------------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #EF233C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: black;
+}
+
+/* Header and Footer styles
+------------------------------------------------------------------------------*/
+header, footer {
+  background: #2B2D42;
+  color: #8D99AE;
+}
+
+header {
+  /* text-align: center; */
+  padding-top: 50px;
+  position: relative;
+}
+
+/* header */
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-image {
+  /* width: 300px; */
+  border-radius: 50%;
+  /* float: left; */
+  /* margin-right: 30px; */
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+footer a:hover {
+  background-color: #EF233C;
+  color: #2B2D42;
+}
+
+.contact-info a {
+  /* background: white; */
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 30px;
+  margin: 0px 20px 20px;
+}
+
+/* Navigation
+------------------------------------------------------------------------------*/
+nav {
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* left: 0; */
+  /* right: 0; */
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* Work Experience
+------------------------------------------------------------------------------*/
+.work {
+  background: #EDF2F4;
+}
+
+.work h3 ~ p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Education
+------------------------------------------------------------------------------*/
+.education {
+  background: #8D99AE;
+  /* background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/toronto.jpg) no-repeat fixed;
+  background-size: cover; */
+}
+
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Media Queries
+------------------------------------------------------------------------------*/
+
+@media (min-width: 900px) {
+
+  .col-narrow {
+    width: 30%;
+    float: left;
+    /* min-height: 175px; */
+    /* border: 1px solid black; */
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /* min-height: 175px; */
+    /* border: 1px solid black; */
+  }
+
+}
+
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-image {
+    width: 200px;
+  }
+}
